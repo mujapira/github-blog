@@ -1,0 +1,53 @@
+<svg width="506" height="296" viewBox="0 0 506 296" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_504_45)">
+<circle cx="-12" cy="22" r="118" fill="#14589C"/>
+</g>
+<rect x="212" y="125" width="69" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="99" y="125" width="106" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect y="125" width="92" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="287" y="125" width="77" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34"/>
+<rect x="328" y="136" width="36" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="184" y="136" width="137" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="72" y="136" width="105" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34"/>
+<rect y="136" width="65" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect y="70" width="144" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="151" y="70" width="136" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34"/>
+<rect width="46" height="3" rx="1.5" transform="matrix(-1 0 0 1 340 70)" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="122" y="81" width="111" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="122" y="222" width="111" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect y="81" width="115" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34"/>
+<rect y="222" width="115" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34"/>
+<rect x="275" y="81" width="28" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34"/>
+<rect x="240" y="81" width="28" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="240" y="222" width="37" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="310" y="81" width="83" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="284" y="92" width="89" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="284" y="233" width="19" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="134" y="92" width="143" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34"/>
+<rect x="134" y="233" width="143" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34"/>
+<rect x="95" y="92" width="32" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="95" y="233" width="32" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect y="92" width="88" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect y="233" width="88" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="349" y="103" width="60" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34"/>
+<rect x="201" y="103" width="142" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="201" y="244" width="51" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="259" y="244" width="62" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34"/>
+<rect x="163" y="103" width="31" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="106" y="103" width="51" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="106" y="244" width="88" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="32" y="103" width="67" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34"/>
+<rect y="244" width="99" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34"/>
+<rect y="103" width="25" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect y="114" width="72" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34"/>
+<rect y="255" width="72" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="79" y="114" width="97" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14"/>
+<rect x="79" y="255" width="55" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34"/>
+<defs>
+<filter id="filter0_f_504_45" x="-530" y="-496" width="1036" height="1036" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_504_45"/>
+</filter>
+</defs>
+</svg>

@@ -2,40 +2,57 @@ import { ReactNode, useEffect, useState } from "react";
 import { api } from "../lib/axios";
 import { createContext } from "use-context-selector";
 
-interface BlogContextType {}
+interface BlogContextType {
+  user: User | undefined;
+}
 
-interface BlogsProviderProps {
+interface BlogProviderProps {
   children: ReactNode;
 }
-interface Blog {}
+interface User {
+  userName: string;
+  name: string;
+  avatar: string;
+  createdAt: Date;
+  followers: number;
+  following: number;
+  bio?: string;
+}
 
-export const BlogsContext = createContext<BlogContextType>({} as BlogContextType);
+export const BlogContext = createContext<BlogContextType>({} as BlogContextType);
 
-export function BlogsProvider({ children }: BlogsProviderProps) {
-  const [blogs, setBlogs] = useState<Blog[]>([]);
+export function BlogProvider({ children }: BlogProviderProps) {
+  const [user, setUser] = useState<User>();
 
-  async function fetchBlogs(query?: string) {
-    const response = await api.get("/blogs", {
+  async function fetchUser(query?: string) {
+    const response = await api.get(`/users/mujapira`, {
       params: {
-        _sort: "createdAt",
-        _order: "desc",
         q: query,
       },
     });
-    setBlogs(response.data);
+
+    const newUser = {
+      userName: response.data.login,
+      name: response.data.name,
+      avatar: response.data.avatar_url,
+      createdAt: response.data.created_at,
+      followers: response.data.followers,
+      following: response.data.following,
+    };
+    setUser(newUser);
   }
 
   useEffect(() => {
-    fetchBlogs();
+    fetchUser();
   }, []);
 
   return (
-    <BlogsContext.Provider
+    <BlogContext.Provider
       value={{
-        blogs,
+        user,
       }}
     >
       {children}
-    </BlogsContext.Provider>
+    </BlogContext.Provider>
   );
 }

@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import { BlogsProvider } from "./contexts/BlogContext";
+import { BlogProvider } from "./contexts/BlogContext";
 import { Home } from "./pages/Home";
 import { GlobalStyle } from "./styles/global";
 import { defaultTheme } from "./styles/themes/default";
@@ -8,9 +8,9 @@ export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
-      <BlogsProvider>
+      <BlogProvider>
         <Home />
-      </BlogsProvider>
+      </BlogProvider>
     </ThemeProvider>
   );
 }

@@ -1,7 +1,6 @@
 import { ReactNode, useEffect, useState } from "react";
 import { api } from "../lib/axios";
 import { createContext } from "use-context-selector";
-
 interface BlogContextType {
   user: User | undefined;
 }
@@ -16,6 +15,7 @@ interface User {
   createdAt: Date;
   followers: number;
   following: number;
+  company?: string;
   bio?: string;
 }
 
@@ -38,6 +38,8 @@ export function BlogProvider({ children }: BlogProviderProps) {
       createdAt: response.data.created_at,
       followers: response.data.followers,
       following: response.data.following,
+      company: response.data.company,
+      bio: response.data.bio
     };
     setUser(newUser);
   }

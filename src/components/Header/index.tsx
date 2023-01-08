@@ -22,7 +22,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="99"
@@ -31,9 +31,9 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
-            <rect y="125" width="92" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14" />
+            <rect y="125" width="92" height="3" rx="1.5" fill="#1562AF" fillOpacity="0.14" />
             <rect
               x="287"
               y="125"
@@ -41,7 +41,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               x="328"
@@ -50,7 +50,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="184"
@@ -59,7 +59,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="72"
@@ -68,10 +68,10 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
-            <rect y="136" width="65" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14" />
-            <rect y="70" width="144" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14" />
+            <rect y="136" width="65" height="3" rx="1.5" fill="#1562AF" fillOpacity="0.14" />
+            <rect y="70" width="144" height="3" rx="1.5" fill="#1562AF" fillOpacity="0.14" />
             <rect
               x="151"
               y="70"
@@ -79,7 +79,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="46"
@@ -87,7 +87,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 340 70)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="122"
@@ -96,7 +96,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="122"
@@ -105,10 +105,10 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
-            <rect y="81" width="115" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34" />
-            <rect y="222" width="115" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34" />
+            <rect y="81" width="115" height="3" rx="1.5" fill="#1562AF" fillOpacity="0.34" />
+            <rect y="222" width="115" height="3" rx="1.5" fill="#1562AF" fillOpacity="0.34" />
             <rect
               x="275"
               y="81"
@@ -116,7 +116,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               x="240"
@@ -125,7 +125,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="240"
@@ -134,7 +134,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="310"
@@ -143,7 +143,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="284"
@@ -152,7 +152,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="284"
@@ -161,7 +161,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="134"
@@ -170,7 +170,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               x="134"
@@ -179,9 +179,9 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
-            <rect x="95" y="92" width="32" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14" />
+            <rect x="95" y="92" width="32" height="3" rx="1.5" fill="#1562AF" fillOpacity="0.14" />
             <rect
               x="95"
               y="233"
@@ -189,10 +189,10 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
-            <rect y="92" width="88" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14" />
-            <rect y="233" width="88" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14" />
+            <rect y="92" width="88" height="3" rx="1.5" fill="#1562AF" fillOpacity="0.14" />
+            <rect y="233" width="88" height="3" rx="1.5" fill="#1562AF" fillOpacity="0.14" />
             <rect
               x="349"
               y="103"
@@ -200,7 +200,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               x="201"
@@ -209,7 +209,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="201"
@@ -218,7 +218,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="259"
@@ -227,7 +227,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               x="163"
@@ -236,7 +236,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="106"
@@ -245,7 +245,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="106"
@@ -254,7 +254,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="32"
@@ -263,12 +263,12 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
-            <rect y="244" width="99" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34" />
-            <rect y="103" width="25" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14" />
-            <rect y="114" width="72" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.34" />
-            <rect y="255" width="72" height="3" rx="1.5" fill="#1562AF" fill-opacity="0.14" />
+            <rect y="244" width="99" height="3" rx="1.5" fill="#1562AF" fillOpacity="0.34" />
+            <rect y="103" width="25" height="3" rx="1.5" fill="#1562AF" fillOpacity="0.14" />
+            <rect y="114" width="72" height="3" rx="1.5" fill="#1562AF" fillOpacity="0.34" />
+            <rect y="255" width="72" height="3" rx="1.5" fill="#1562AF" fillOpacity="0.14" />
             <rect
               x="79"
               y="114"
@@ -276,7 +276,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="79"
@@ -285,7 +285,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <defs>
               <filter
@@ -295,9 +295,9 @@ export function Header() {
                 width="1036"
                 height="1036"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                 <feGaussianBlur stdDeviation="200" result="effect1_foregroundBlur_504_45" />
               </filter>
@@ -313,11 +313,11 @@ export function Header() {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g clip-path="url(#clip0_406_119)">
+            <g clipPath="url(#clip0_406_119)">
               <path
                 d="M70.2352 18.7646L70.2353 18.7647C70.919 19.4483 70.919 20.5516 70.2353 21.2353L70.2353 21.2353L55.2376 36.2353C54.554 36.9189 53.4461 36.9189 52.7626 36.2353C52.0791 35.5517 52.0791 34.4483 52.7626 33.7646L52.7626 33.7646L65.9914 20.5302L66.5214 19.9999L65.9913 19.4697L52.7626 6.23771C52.7626 6.2377 52.7626 6.23769 52.7626 6.23769C52.0792 5.55408 52.0791 4.44622 52.7623 3.76252C52.7624 3.76249 52.7624 3.76245 52.7624 3.76242C52.7625 3.76237 52.7625 3.76232 52.7626 3.76226C53.4461 3.07945 54.5541 3.07945 55.2378 3.76248C55.2378 3.76251 55.2378 3.76253 55.2379 3.76256L70.2352 18.7646ZM94 33.25C94.9686 33.25 95.75 34.0314 95.75 35C95.75 35.9686 94.9686 36.75 94 36.75H71.5C70.5314 36.75 69.75 35.9686 69.75 35C69.75 34.0314 70.5314 33.25 71.5 33.25H94Z"
                 stroke="#3294F8"
-                stroke-width="1.5"
+                strokeWidth="1.5"
               />
             </g>
             <path
@@ -355,7 +355,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 341 197)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="94"
@@ -363,7 +363,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 441 197)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="82"
@@ -371,7 +371,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 529 197)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="68"
@@ -379,7 +379,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 274 197)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="42"
@@ -387,7 +387,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 200 208)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="32"
@@ -395,7 +395,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 238 208)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="122"
@@ -403,7 +403,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 366 208)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="93"
@@ -411,7 +411,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 465 208)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="58"
@@ -419,7 +419,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 529 208)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="118"
@@ -427,7 +427,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 529 30)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="128"
@@ -435,7 +435,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 529 219)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="112"
@@ -443,7 +443,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 405 30)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="121"
@@ -451,7 +451,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 348 219)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="249"
@@ -460,7 +460,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               x="354"
@@ -469,7 +469,7 @@ export function Header() {
               height="3"
               rx="1.5"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="92"
@@ -477,7 +477,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 429 41)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="99"
@@ -485,7 +485,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 421 230)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="94"
@@ -493,7 +493,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 529 41)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="102"
@@ -501,7 +501,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 529 230)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="23"
@@ -509,7 +509,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 303 41)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="23"
@@ -517,7 +517,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 332 41)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="62"
@@ -525,7 +525,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 316 230)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="68"
@@ -533,7 +533,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 274 41)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="79"
@@ -541,7 +541,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 277 84)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="79"
@@ -549,7 +549,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 277 241)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="127"
@@ -557,7 +557,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 410 84)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="127"
@@ -565,7 +565,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 410 241)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="29"
@@ -573,7 +573,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 445 84)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="29"
@@ -581,7 +581,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 445 241)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="78"
@@ -589,7 +589,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 529 84)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="78"
@@ -597,7 +597,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 529 241)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="53"
@@ -605,7 +605,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 219 95)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="53"
@@ -613,7 +613,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 219 252)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="126"
@@ -621,7 +621,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 351 95)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="126"
@@ -629,7 +629,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 351 252)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="27"
@@ -637,7 +637,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 384 95)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="45"
@@ -645,7 +645,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 435 95)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="78"
@@ -653,7 +653,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 435 252)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="60"
@@ -661,7 +661,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 501 95)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="88"
@@ -669,7 +669,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 529 252)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="22"
@@ -677,7 +677,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 529 95)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="64"
@@ -685,7 +685,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 529 106)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="64"
@@ -693,7 +693,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 529 263)"
               fill="#1562AF"
-              fill-opacity="0.34"
+              fillOpacity="0.34"
             />
             <rect
               width="86"
@@ -701,7 +701,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 459 106)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <rect
               width="154"
@@ -709,7 +709,7 @@ export function Header() {
               rx="1.5"
               transform="matrix(-1 0 0 1 459 263)"
               fill="#1562AF"
-              fill-opacity="0.14"
+              fillOpacity="0.14"
             />
             <defs>
               <filter
@@ -719,9 +719,9 @@ export function Header() {
                 width="891.29"
                 height="891.29"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                 <feGaussianBlur stdDeviation="184" result="effect1_foregroundBlur_504_44" />
               </filter>
@@ -748,9 +748,9 @@ export function Header() {
                 width="1315"
                 height="476"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                 <feGaussianBlur stdDeviation="106" result="effect1_foregroundBlur_401_616" />
               </filter>

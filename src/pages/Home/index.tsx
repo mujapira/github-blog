@@ -1,5 +1,5 @@
 import { useContext } from "use-context-selector";
-import { BlogContext } from "../../contexts/BlogContext";
+import { BlogContext, Post as IPost } from "../../contexts/BlogContext";
 import { Header } from "../../components/Header";
 import {
   BodyContainer,
@@ -9,9 +9,8 @@ import {
   SearchContainer,
 } from "./styled";
 import { Buildings, GithubLogo, Link, Users } from "phosphor-react";
-
 export function Home() {
-  const { user } = useContext(BlogContext);
+  const { user, posts } = useContext(BlogContext);
 
   return (
     <>
@@ -65,12 +64,16 @@ export function Home() {
           <button></button>
         </SearchContainer>
 
-        <PostsContainer>
-          <PostContainer>1</PostContainer>
-          <PostContainer>2</PostContainer>
-          <PostContainer>3</PostContainer>
-          <PostContainer>4</PostContainer>
-        </PostsContainer>
+        {posts.map((post: IPost) => {
+          return (
+            <PostsContainer key={post.id}>
+              <>
+                <div>{post.title}</div>
+                <div>{post.createdAt}</div>
+              </>
+            </PostsContainer>
+          );
+        })}
       </BodyContainer>
     </>
   );

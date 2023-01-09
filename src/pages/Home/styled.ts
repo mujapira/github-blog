@@ -107,11 +107,34 @@ export const CardContainer = styled.div`
   }
 `;
 
-export const SearchContainer = styled.div`
+export const SearchContainer = styled.form`
   margin-top: 164px;
-  button {
-    width: 40px;
-    height: 50px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 50px;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+    }
+    span {
+      color: ${(props) => props.theme["base-span"]};
+      font-size: 0.875rem;
+    }
+  }
+  
+  input {
+    color: ${(props) => props.theme["base-label"]};
+    border: 1px solid ${(props) => props.theme["base-border"]};
+    background-color: ${(props) => props.theme["base-input"]};
+    padding: 12px 16px;
+    width: 100%;
+    font-weight: 400;
+    border-radius: 6px;
+    font-size: 1rem;
   }
 `;
 

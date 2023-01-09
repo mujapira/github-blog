@@ -4,6 +4,7 @@ import { createContext } from "use-context-selector";
 interface BlogContextType {
   user: User | undefined;
   posts: Post[];
+  handleSearch: (query: string) => any;
 }
 
 interface BlogProviderProps {
@@ -33,9 +34,7 @@ export function BlogProvider({ children }: BlogProviderProps) {
   const [posts, setPosts] = useState<Post[]>([]);
 
   const githubUser = "mujapira";
-
-
-
+  const githubRepo = "github-blog";
   async function fetchUser(query?: string) {
     const response = await api.get(`/users/${githubUser}`, {
       params: {
@@ -57,7 +56,7 @@ export function BlogProvider({ children }: BlogProviderProps) {
   }
 
   async function fetchPosts(query?: string) {
-    const response = await api.get(`repos/${githubUser}/github-blog/issues`);
+    const response = await api.get(`repos/${githubUser}/${githubRepo}/issues`);
 
     const postList = response.data;
     const newPostList: Post[] = [];
@@ -72,6 +71,11 @@ export function BlogProvider({ children }: BlogProviderProps) {
     setPosts(newPostList);
   }
 
+  async function handleSearch(query: string) {
+    const response = await api.get(`search/issues?q=${query}%20repo:${githubUser}/${githubRepo}`);
+    console.log(response.data);
+  }
+
   useEffect(() => {
     fetchUser();
     fetchPosts();
@@ -82,6 +86,7 @@ export function BlogProvider({ children }: BlogProviderProps) {
       value={{
         user,
         posts,
+        handleSearch,
       }}
     >
       {children}

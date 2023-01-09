@@ -10,9 +10,28 @@ import {
 } from "./styled";
 import { Buildings, GithubLogo, Link, Users } from "phosphor-react";
 import { dateFormatter } from "../../utils/formatter";
-import { date } from "zod";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as zod from "zod";
+import { ChangeEvent, useState } from "react";
+
+const searchFormSchema = zod.object({
+  query: zod.string(),
+});
+
+type searchFormData = zod.infer<typeof searchFormSchema>;
+
 export function Home() {
-  const { user, posts } = useContext(BlogContext);
+  const { user, posts, handleSearch } = useContext(BlogContext);
+  const { register, handleSubmit, watch, control } = useForm<searchFormData>({
+    resolver: zodResolver(searchFormSchema),
+  });
+  const [searchValue, setSearchValue] = useState("");
+
+  function handleSerachChange(e: ChangeEvent<HTMLInputElement>) {
+    e.target.setCustomValidity("");
+    setSearchValue(e.target.value);
+  }
 
   function truncate(text: string) {
     text = text.replace(/\#/g, "");
@@ -70,13 +89,18 @@ export function Home() {
           </div>
         </CardContainer>
 
-        <SearchContainer>
+        <SearchContainer onSubmit={handleSubmit(handleSearch(searchValue))}>
           <div>
             <h3>Publicações</h3>
-            <span>Count de publicações</span>
+            <span>{posts.length} publicações</span>
           </div>
-          <input type="text" name="" id="" />
-          <button></button>
+          <input
+            placeholder="Buscar conteúdo"
+            {...register("query")}
+            value={searchValue}
+            required
+            onChange={handleSerachChange}
+          />
         </SearchContainer>
         <PostsContainer>
           {posts.map((post: IPost) => {

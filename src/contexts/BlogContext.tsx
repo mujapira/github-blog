@@ -34,6 +34,8 @@ export function BlogProvider({ children }: BlogProviderProps) {
 
   const githubUser = "mujapira";
 
+
+
   async function fetchUser(query?: string) {
     const response = await api.get(`/users/${githubUser}`, {
       params: {

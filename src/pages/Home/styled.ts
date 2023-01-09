@@ -9,10 +9,11 @@ export const BodyContainer = styled.div`
   height: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  max-width: 864px;
 `;
 
 export const CardContainer = styled.div`
-  max-width: 864px;
+  width: 100%;
   max-height: 212px;
   width: 100%;
   height: 100%;
@@ -114,6 +115,51 @@ export const SearchContainer = styled.div`
   }
 `;
 
-export const PostsContainer = styled.div``;
+export const PostsContainer = styled.div`
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 32px;
+  width: 100%;
+`;
 
-export const PostContainer = styled.div``;
+export const PostContainer = styled.div`
+  padding: 32px;
+  border-radius: 10px;
+  background-color: ${(props) => props.theme["base-post"]};
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    .title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.25rem;
+      max-width: 250px;
+      color: ${(props) => props.theme["base-title"]};
+    }
+    .date {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: ${(props) => props.theme["base-span"]};
+    }
+  }
+
+  .body {
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: ${(props) => props.theme["base-text"]};
+      text-overflow: ellipsis;
+      text-align: justify;
+    }
+  }
+`;

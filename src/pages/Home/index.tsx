@@ -9,8 +9,23 @@ import {
   SearchContainer,
 } from "./styled";
 import { Buildings, GithubLogo, Link, Users } from "phosphor-react";
+import { dateFormatter } from "../../utils/formatter";
+import { date } from "zod";
 export function Home() {
   const { user, posts } = useContext(BlogContext);
+
+  function truncate(text: string) {
+    text = text.replace(/\#/g, "");
+    text = text.replace(/\*/g, "");
+    text = text.replace(/\>/g, "");
+    text = text.replace(/\</g, "");
+
+    if (text.length > 250) {
+      return `${text.substring(0, 250)}...`;
+    } else {
+      return text;
+    }
+  }
 
   return (
     <>
@@ -63,17 +78,39 @@ export function Home() {
           <input type="text" name="" id="" />
           <button></button>
         </SearchContainer>
+        <PostsContainer>
+          {posts.map((post: IPost) => {
+            let date1 = new Date();
+            let date2 = new Date(post.createdAt);
+            const diff = Math.abs(date1.getTime() - date2.getTime()) / 3600000;
+            let date = dateFormatter.format(new Date(post.createdAt));
+            diff.toFixed(2);
 
-        {posts.map((post: IPost) => {
-          return (
-            <PostsContainer key={post.id}>
-              <>
-                <div>{post.title}</div>
-                <div>{post.createdAt}</div>
-              </>
-            </PostsContainer>
-          );
-        })}
+            if (diff < 1) {
+              diff / 60;
+              date = `Há menos de uma hora`;
+            } else if (diff < 24) {
+              date = `${`Há ${diff.toFixed(0)} hora(s)`}`;
+            } else if (diff > 24) {
+              diff / 24;
+              date = `${`Há ${diff.toFixed(0)} dias(s)`}`;
+            } else {
+              date = dateFormatter.format(new Date(post.createdAt));
+            }
+
+            return (
+              <PostContainer key={post.id}>
+                <div className="header">
+                  <span className="title">{post.title}</span>
+                  <span className="date">{date}</span>
+                </div>
+                <div className="body">
+                  <p>{truncate(post.body)}</p>
+                </div>
+              </PostContainer>
+            );
+          })}
+        </PostsContainer>
       </BodyContainer>
     </>
   );

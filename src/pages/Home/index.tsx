@@ -1,5 +1,6 @@
 import { useContext } from "use-context-selector";
 import { BlogContext, Post as IPost } from "../../contexts/BlogContext";
+
 import { Header } from "../../components/Header";
 import {
   BodyContainer,
@@ -8,13 +9,19 @@ import {
   PostsContainer,
   SearchContainer,
 } from "./styled";
-import { Buildings, GithubLogo, Link, Users } from "phosphor-react";
+import { Buildings, GithubLogo, Link as LinkIcon, Users } from "phosphor-react";
 import { dateFormatter } from "../../utils/formatter";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as zod from "zod";
 import { ChangeEvent, useState } from "react";
 
+export interface Post {
+  id: string;
+  title: string;
+  body: string;
+  createdAt: string;
+}
 const searchFormSchema = zod.object({
   query: zod.string(),
 });
@@ -22,14 +29,14 @@ const searchFormSchema = zod.object({
 type searchFormData = zod.infer<typeof searchFormSchema>;
 
 export function Home() {
-  const { user, posts, handleSearch } = useContext(BlogContext);
-  const { register, handleSubmit, watch, control } = useForm<searchFormData>({
+  const { user, posts, handleSearch, handlePostState } = useContext(BlogContext);
+
+  const { register, handleSubmit } = useForm<searchFormData>({
     resolver: zodResolver(searchFormSchema),
   });
   const [searchValue, setSearchValue] = useState("");
 
-  function handleSerachChange(e: ChangeEvent<HTMLInputElement>) {
-    e.target.setCustomValidity("");
+  function handleSearchChange(e: ChangeEvent<HTMLInputElement>) {
     setSearchValue(e.target.value);
   }
 
@@ -60,7 +67,7 @@ export function Home() {
               {user?.name}
               <a className="link" href={`https://github.com/${user?.userName}`}>
                 GITHUB
-                <Link size={20} weight="fill" />
+                <LinkIcon size={20} weight="fill" />
               </a>
             </span>
             <span>{user?.bio}</span>
@@ -99,7 +106,7 @@ export function Home() {
             {...register("query")}
             value={searchValue}
             required
-            onChange={handleSerachChange}
+            onChange={handleSearchChange}
           />
         </SearchContainer>
         <PostsContainer>
@@ -111,19 +118,21 @@ export function Home() {
             diff.toFixed(2);
 
             if (diff < 1) {
-              diff / 60;
               date = `Há menos de uma hora`;
             } else if (diff < 24) {
               date = `${`Há ${diff.toFixed(0)} hora(s)`}`;
             } else if (diff > 24) {
-              diff / 24;
-              date = `${`Há ${diff.toFixed(0)} dias(s)`}`;
+              date = `${`Há ${(diff / 24).toFixed(0)} dia(s)`}`;
             } else {
               date = dateFormatter.format(new Date(post.createdAt));
             }
 
             return (
-              <PostContainer key={post.id}>
+              <PostContainer
+                to={`/post/${post.id}`}
+                key={post.id}
+                onClick={() => handlePostState(post)}
+              >
                 <div className="header">
                   <span className="title">{post.title}</span>
                   <span className="date">{date}</span>

@@ -5,6 +5,8 @@ interface BlogContextType {
   user: User | undefined;
   posts: Post[];
   handleSearch: (query: string) => any;
+  post: Post;
+  handlePostState: (post: Post) => any;
 }
 
 interface BlogProviderProps {
@@ -26,12 +28,19 @@ export interface Post {
   title: string;
   body: string;
   createdAt: string;
+  comments?: number;
 }
 export const BlogContext = createContext<BlogContextType>({} as BlogContextType);
 
 export function BlogProvider({ children }: BlogProviderProps) {
   const [user, setUser] = useState<User>();
   const [posts, setPosts] = useState<Post[]>([]);
+  const [post, setPost] = useState<Post>({
+    id: "",
+    title: "",
+    body: "",
+    createdAt: "",
+  });
 
   const githubUser = "mujapira";
   const githubRepo = "github-blog";
@@ -72,8 +81,13 @@ export function BlogProvider({ children }: BlogProviderProps) {
   }
 
   async function handleSearch(query: string) {
-    const response = await api.get(`search/issues?q=${query}%20repo:${githubUser}/${githubRepo}`);
-    console.log(response.data);
+    // const response = await api.get(`search/issues?q=${query}%20repo:${githubUser}/${githubRepo}`);
+    // console.log(response);
+  }
+
+  function handlePostState(post: Post) {
+    setPost(post);
+    console.log(post);
   }
 
   useEffect(() => {
@@ -87,6 +101,8 @@ export function BlogProvider({ children }: BlogProviderProps) {
         user,
         posts,
         handleSearch,
+        post,
+        handlePostState,
       }}
     >
       {children}

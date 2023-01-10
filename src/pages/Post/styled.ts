@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const BodyContainer = styled.div`
@@ -15,7 +14,7 @@ export const BodyContainer = styled.div`
 
 export const CardContainer = styled.div`
   width: 100%;
-  max-height: 212px;
+  max-height: 168px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -41,6 +40,7 @@ export const CardContainer = styled.div`
     justify-content: space-between;
     font-weight: 700;
     font-size: 1.5rem;
+    width: 100%;
     color: ${(props) => props.theme["base-title"]};
 
     .link {
@@ -71,14 +71,33 @@ export const CardContainer = styled.div`
   .content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: flex-start;
     height: 100%;
     width: 100%;
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+      .title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: ${(props) => props.theme["base-title"]};
+      }
+      .date {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: ${(props) => props.theme["base-span"]};
+      }
+    }
     .tags {
       display: flex;
       width: 100%;
       gap: 24px;
-      margin-top: 40px;
 
       > div {
         display: flex;
@@ -108,84 +127,51 @@ export const CardContainer = styled.div`
   }
 `;
 
-export const SearchContainer = styled.form`
-  margin-top: 164px;
+export const PostsContainer = styled.div`
   display: flex;
   width: 100%;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 50px;
-  div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    h3 {
-    }
-    span {
-      color: ${(props) => props.theme["base-span"]};
-      font-size: 0.875rem;
-    }
-  }
-
-  input {
-    color: ${(props) => props.theme["base-label"]};
-    border: 1px solid ${(props) => props.theme["base-border"]};
-    background-color: ${(props) => props.theme["base-input"]};
-    padding: 12px 16px;
-    width: 100%;
-    font-weight: 400;
-    border-radius: 6px;
-    font-size: 1rem;
-  }
+  margin-top: 100px;
 `;
 
-export const PostsContainer = styled.div`
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  gap: 32px;
-  width: 100%;
-`;
-
-export const PostContainer = styled(Link)`
-  text-decoration: none;
+export const PostContainer = styled.a`
   padding: 32px;
   border-radius: 10px;
-  background-color: ${(props) => props.theme["base-post"]};
+  background-color: ${(props) => props.theme["base-background"]};
   display: flex;
   flex-direction: column;
   gap: 20px;
   cursor: pointer;
-
-  .header {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-    .title {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 1.25rem;
-      max-width: 250px;
-      color: ${(props) => props.theme["base-title"]};
-    }
-    .date {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      color: ${(props) => props.theme["base-span"]};
-    }
-  }
-
+  width: 100%;
   .body {
+    line-height: 160%;
+    cursor: text;
+
     p {
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       color: ${(props) => props.theme["base-text"]};
-      text-overflow: ellipsis;
-      text-align: justify;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      padding: 20px 0px 10px 0px;
+    }
+    a {
+      font-style: normal;
+      font-weight: 700;
+      color: ${(props) => props.theme["blue"]};
+      text-decoration: none;
+    }
+    pre {
+      margin: 10px 0px 10px 20px;
+      background-color: ${(props) => props.theme["base-post"]};
+      border-radius: 10px;
+      padding: 20px;
+      white-space: break-spaces;
     }
   }
 `;
